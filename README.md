@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+in simple terms - redux is a JS library to manage global state, redux toolkit on the other hand makes it easier to write redux applications in this repo we explaning who to implement redux toolkit in our app for more info about you can visit [redux-toolkit docs](https://redux-toolkit.js.org/introduction/getting-started).
 
-## Available Scripts
+## Get started with installation
 
 In the project directory, you can run:
 
-### `npm start`
+> npx create-react-app app-name
+> npm install @reduxjs/toolkit
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1 - creating store
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+first lets create a global store with use of `configureStore` which is a friendly abstraction over the standard redux
+you can see the example at[`createStore`](./src/store/store.js)
+for more info about you can visit [redux-toolkit createStore docs](https://redux-toolkit.js.org/api/configureStore).
 
-### `npm test`
+### 2 - create slice(reducer)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+createSlice is our second used api that accepts a single configuration object parameter which contains:
+Unordered Lists:
+name 1initialState 2reducers 3extraReducers
 
-### `npm run build`
+you can see the example at ['createSlice'](./src/store/slices/counter/counter.js)
+for more info about you can visit [redux-toolkit createSlice docs](https://redux-toolkit.js.org/api/createSlice).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3 - create thunk call
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+with `createAsyncThunk` API you can build a thunk action and it's accept 2 parameter
+Unordered Lists:
+name of type 1call back async call function
+example at [createAsyncThunk](./src/store/slices/people/people.js)
+for more info about you can visit [redux-toolkit createAsyncThunk docs](https://redux-toolkit.js.org/api/createAsyncThunk).
