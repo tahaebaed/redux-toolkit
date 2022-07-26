@@ -1,10 +1,11 @@
 # The Team
 
-- [Taha Ebaed]()
-- [Esraa Ismail]()
-- [Aliaa ALi]()
+- [Taha Ebaed](https://github.com/tahaebaed)
+- [Esraa Ismail](https://github.com/Esraaismail309)
+- [Aliaa ALi](https://github.com/aaliaa-ali)
 
-[our presentation](https://www.canva.com/design/DAFG8yjfGKw/PDBR3bVh2eJgZsutA-aasw/edit?utm_content=DAFG8yjfGKw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[our presentation](https://www.canva.com/design/DAFG8yjfGKw/PDBR3bVh2eJgZsutA-aasw/view?utm_content=DAFG8yjfGKw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton#2)
+[our explanation docs](https://docs.google.com/document/d/1McZ8ia9cwrkWOerPc8J91S_ruWtlP17guRQo34gI7sI/edit)
 
 # Introduction
 
