@@ -41,7 +41,7 @@ createSlice is our second used api that accepts a single configuration object pa
 you can see the example at ['createSlice'](./src/store/slices/counter/counter.js)
 for more info about you can visit [redux-toolkit createSlice docs](https://redux-toolkit.js.org/api/createSlice).
 
-### 3 - create thunk call
+### 3 - create Async call
 
 with `createAsyncThunk` API you can build a thunk action and it's accept 2 parameter
 Unordered Lists:
